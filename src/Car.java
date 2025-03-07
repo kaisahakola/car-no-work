@@ -3,6 +3,7 @@ public class Car {
     String engine = "köh köh";
 
     public void fixCar() {
+        System.out.println("lets fix");
         this.engine = "vrumm vrumm";
     }
 }
