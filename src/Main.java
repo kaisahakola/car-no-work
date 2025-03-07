@@ -5,13 +5,23 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         Car myCar = new Car();
 
+        startCar(myCar);
+        int decision = makeDecision(scanner);
+        fixOrBuyNew(myCar, decision);
+    }
+
+    public static void startCar(Car myCar) {
         System.out.println(myCar.car);
         System.out.println(myCar.engine);
         System.out.println("oh no car no wörk");
+    }
 
+    public static int makeDecision(Scanner scanner) {
         System.out.println("fix car or buy new? 1 = fix, 2 = buy");
-        int decision = scanner.nextInt();
+        return scanner.nextInt();
+    }
 
+    public static void fixOrBuyNew(Car myCar, int decision) {
         if (decision == 1) {
             myCar.fixCar();
             System.out.println(myCar.engine);
