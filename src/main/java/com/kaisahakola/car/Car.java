@@ -1,6 +1,8 @@
 package main.java.com.kaisahakola.car;
 
-public class Car {
+import main.java.com.kaisahakola.vehicle.Vehicle;
+
+public class Car extends Vehicle {
     private String car = "hello im car";
     private String engine = "* köh köh *";
 
