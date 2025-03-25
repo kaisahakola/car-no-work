@@ -14,4 +14,8 @@ public class InputHelper {
         System.out.println("fix car or buy new? 1 = fix, 2 = buy");
         return scanner.nextInt();
     }
+
+    public void close() {
+        scanner.close();
+    }
 }

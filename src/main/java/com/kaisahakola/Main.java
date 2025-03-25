@@ -14,5 +14,7 @@ public class Main {
         carService.startCar(myCar);
         int decision = inputHelper.getUserChoice();
         carService.makeDecision(myCar, decision);
+
+        inputHelper.close();
     }
 }
